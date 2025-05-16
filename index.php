@@ -12,7 +12,7 @@ $answers = [
 ];
 
 if ($a !== '' && $b !== '' && $c !== '') {
-    $command = escapeshellcmd("python calculate.py $a $b $c");
+    $command = escapeshellcmd("python3 calculate.py $a $b $c");
     $output = shell_exec($command);
 
     $response = json_decode($output, true);
